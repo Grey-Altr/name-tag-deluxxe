@@ -40,3 +40,10 @@ footer {
     display: grid;
     gap: 15px;
 }
+
+.name-display, .animal-display {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
