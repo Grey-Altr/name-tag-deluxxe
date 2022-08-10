@@ -9,7 +9,14 @@
 
 const nameInput = document.getElementById('name-input');
 const animalInput = document.getElementById('animal-input');
-const nameDisplay = document.getElementById('');
-const animalDisplay = document.getElementById('');
+const nameDisplay = document.getElementById('name-display');
+const animalDisplay = document.getElementById('animal-display');
 
 
+nameInput.addEventListener('input', () => {
+    nameDisplay.textContent = nameInput.value;
+});
+
+animalInput.addEventListener('change', () => {
+    animalDisplay.textContent = animalInput.value;
+});
